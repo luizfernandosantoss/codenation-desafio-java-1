@@ -1,0 +1,16 @@
+{1001=Time{id=1001, nome='Real Madrid', dataCriacao=1990-01-01, corUniformePrincipal='Branco', corUniformeSecundario='Azul', capitao=null}}
+{1001=Time{id=1001, nome='Real Madrid', dataCriacao=1990-01-01, corUniformePrincipal='Branco', corUniformeSecundario='Azul', capitao=null}, 1002=Time{id=1002, nome='Flamengo', dataCriacao=1970-01-01, corUniformePrincipal='Vermelho', corUniformeSecundario='Amarelo', capitao=null}}
+Jogador{id=500, idTime=1001, nome='Bruno', idade=25, dataNascimento=1993-08-27, salario=2500, nivelHabilidade=10}
+Jogador{id=501, idTime=1001, nome='Carlos', idade=22, dataNascimento=1997-01-05, salario=5000, nivelHabilidade=8}
+Jogador{id=101, idTime=1001, nome='Bruno1', idade=25, dataNascimento=1993-08-27, salario=7000, nivelHabilidade=80}
+Jogador{id=102, idTime=1001, nome='Bruno2', idade=25, dataNascimento=1993-07-27, salario=2500, nivelHabilidade=10}
+Jogador{id=103, idTime=1001, nome='Bruno3', idade=25, dataNascimento=1993-06-27, salario=2500, nivelHabilidade=99}
+Jogador{id=104, idTime=1001, nome='Bruno4', idade=27, dataNascimento=1991-11-27, salario=2500, nivelHabilidade=99}
+Jogador{id=105, idTime=1001, nome='Bruno5', idade=25, dataNascimento=1993-04-27, salario=7000, nivelHabilidade=60}
+Jogador{id=106, idTime=1001, nome='Bruno6', idade=25, dataNascimento=1993-03-27, salario=2500, nivelHabilidade=98}
+Jogador{id=107, idTime=1001, nome='Bruno7', idade=25, dataNascimento=1993-02-27, salario=2500, nivelHabilidade=97}
+Jogador{id=108, idTime=1001, nome='Bruno8', idade=26, dataNascimento=1993-01-27, salario=9000, nivelHabilidade=97}
+Jogador{id=109, idTime=1001, nome='Bruno9', idade=26, dataNascimento=1992-12-27, salario=9000, nivelHabilidade=96}
+Jogador{id=1010, idTime=1001, nome='Bruno10', idade=26, dataNascimento=1992-11-27, salario=2500, nivelHabilidade=10}
+Jogador{id=1011, idTime=1001, nome='Bruno10', idade=27, dataNascimento=1991-11-27, salario=2500, nivelHabilidade=10}
+{"score": 62.07}
