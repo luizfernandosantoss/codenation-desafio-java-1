@@ -21,7 +21,6 @@ public class TimeDao {
             throw new IdentificadorUtilizadoException("Time de id "+time.getId() + " Ja esta cadastrado");
         }
         listaTime.put(time.getId(),time);
-        System.out.println(listaTime);
 
     }
 

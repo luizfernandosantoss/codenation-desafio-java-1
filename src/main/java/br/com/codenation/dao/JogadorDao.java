@@ -21,7 +21,6 @@ public class JogadorDao {
             throw new IdentificadorUtilizadoException("Jogador com id = "+jogador.getId() + " Ja esta cadastrado");
         }
         listaJogadores.put(jogador.getId(),jogador);
-        System.out.println(jogador);
 
     }
 
