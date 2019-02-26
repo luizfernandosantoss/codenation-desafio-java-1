@@ -1,8 +1,6 @@
 package br.com.codenation.dao;
 
 import br.com.codenation.desafio.exceptions.CapitaoNaoInformadoException;
-import br.com.codenation.desafio.exceptions.IdentificadorUtilizadoException;
-import br.com.codenation.desafio.exceptions.JogadorNaoEncontradoException;
 import br.com.codenation.desafio.exceptions.TimeNaoEncontradoException;
 
 import br.com.codenation.model.Time;
@@ -13,15 +11,11 @@ import java.util.*;
 
 public class TimeDao {
 
-    private static final Map<Long, Time> listaTime = new HashMap<Long, Time>();
+    private static final HashMap<Long, Time> listaTime = new HashMap<>();
 
 
     public void adicionarTime(Time time) {
-        if (listaTime.containsKey(time.getId())){
-            throw new IdentificadorUtilizadoException("Time de id "+time.getId() + " Ja esta cadastrado");
-        }
-        listaTime.put(time.getId(),time);
-
+        if (!listaTime.containsKey(time.getId())) listaTime.put(time.getId(),time);
     }
 
     public String buscaNomeTime(Long idTime) {

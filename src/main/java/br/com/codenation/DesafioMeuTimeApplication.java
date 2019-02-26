@@ -8,6 +8,9 @@ import br.com.codenation.desafio.app.MeuTimeInterface;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
+
+import br.com.codenation.desafio.exceptions.IdentificadorUtilizadoException;
+import br.com.codenation.desafio.exceptions.TimeNaoEncontradoException;
 import br.com.codenation.model.Jogador;
 
 import br.com.codenation.model.Time;
@@ -15,14 +18,19 @@ import br.com.codenation.model.Time;
 
 public class DesafioMeuTimeApplication implements MeuTimeInterface {
 
+	public DesafioMeuTimeApplication() {
+		this.timeDao = new TimeDao();
+		this.jogadorDao = new JogadorDao();
+	}
 
-	private TimeDao timeDao = new TimeDao();
-	private JogadorDao jogadorDao = new JogadorDao();
+	private TimeDao timeDao;
+	private JogadorDao jogadorDao;
 
 
 	@Desafio("incluirTime")
 	public void incluirTime(Long id, String nome, LocalDate dataCriacao, String corUniformePrincipal, String corUniformeSecundario) {
 		timeDao.adicionarTime(new Time(id,nome,dataCriacao,corUniformePrincipal,corUniformeSecundario));
+
 	}
 
 	@Desafio("incluirJogador")
@@ -48,6 +56,7 @@ public class DesafioMeuTimeApplication implements MeuTimeInterface {
 
 	@Desafio("buscarNomeTime")
 	public String buscarNomeTime(Long idTime) {
+
 		return timeDao.buscaNomeTime(idTime);
 	}
 
@@ -63,6 +72,7 @@ public class DesafioMeuTimeApplication implements MeuTimeInterface {
 
 	@Desafio("buscarJogadorMaisVelho")
 	public Long buscarJogadorMaisVelho(Long idTime) {
+
 		return jogadorDao.buscarJogadorMaisVelho(idTime);
 	}
 
@@ -83,6 +93,7 @@ public class DesafioMeuTimeApplication implements MeuTimeInterface {
 
 	@Desafio("buscarTopJogadores")
 	public List<Long> buscarTopJogadores(Integer top) {
+
 		return jogadorDao.buscarTopJogadores(top);
 
 	}

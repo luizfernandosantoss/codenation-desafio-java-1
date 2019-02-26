@@ -12,15 +12,14 @@ import java.util.*;
 public class JogadorDao {
 
     private TimeDao timeDao = new TimeDao();
-    private static final Map<Long, Jogador> listaJogadores = new HashMap<Long, Jogador>();
+    private static final HashMap<Long, Jogador> listaJogadores = new HashMap<>();
 
 
     public  void adicionarJogador(Jogador jogador) {
         timeDao.buscarTimePorId(jogador.getIdTime());
-        if(listaJogadores.containsKey(jogador.getId())){
-            throw new IdentificadorUtilizadoException("Jogador com id = "+jogador.getId() + " Ja esta cadastrado");
-        }
         listaJogadores.put(jogador.getId(),jogador);
+
+
 
     }
 
